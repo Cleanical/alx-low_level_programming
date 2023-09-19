@@ -3,6 +3,7 @@
  * puts_half - the function name
  * @str: function parameter
  */
+
 void puts_half(char *str)
 {
 int i;
