@@ -1,20 +1,22 @@
 #include "main.h"
-/**
- *_strchr - is the function used
- *@s: first parameter
- *@c: second parameter
- *Return: c
- */
 
+/**
+  * _strchr - main function
+  *
+  * @s: Function parameter
+  *
+  * @c: Function parameter
+  *
+  * Return: Always o.
+  */
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int k;
+
+	for (k = 0; s[k] >= '\0'; k++)
 	{
-		if (*s == c)
-		       return (s);
-		++s;
+	if (s[k] == c)
+	return (s + k);
 	}
-		if (*s == c)
-			return (s);
-		return (NULL);
+	return (0);
 }
